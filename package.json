@@ -1,0 +1,15 @@
+{
+  "name": "github-profile-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm dlx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
