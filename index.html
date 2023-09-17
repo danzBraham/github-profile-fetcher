@@ -1,18 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Profile Fetcher</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
-  <body>
-    <div class="h-screen flex justify-center items-center">
-      <h1
-        class="text-8xl text-center font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text"
-      >
-        Hello World
-      </h1>
-    </div>
+  <body class="font-poppins">
+    <main
+      class="flex h-screen flex-col items-center justify-center bg-slate-200"
+    >
+      <!-- Search Github Username -->
+      <div class="flex flex-col items-center">
+        <h1>Github Profile Fetcher</h1>
+        <div>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter github username"
+          />
+          <button id="fetch-btn">Fetch Profile</button>
+        </div>
+      </div>
+      <!-- Profile -->
+      <div id="profile"></div>
+    </main>
   </body>
 </html>
