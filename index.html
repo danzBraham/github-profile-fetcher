@@ -11,18 +11,16 @@
       src="https://kit.fontawesome.com/71db4b38f3.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Script -->
     <script src="./js/script.js" defer></script>
   </head>
   <body class="overflow-x-hidden font-poppins">
     <main
-      class="flex h-screen flex-col items-center justify-center gap-6 bg-gradient-to-br from-[#18122B] to-[#393053] p-5"
+      class="h-screen gap-6 bg-gradient-to-br from-[#18122B] to-[#393053] p-5"
     >
       <!-- Search Github Username -->
       <div
-        class="flex w-full flex-col items-center gap-3 rounded-2xl bg-[#635985] p-5 text-white shadow-md ring-2 ring-[#443C68]"
+        class="flex w-full flex-col items-center gap-3 rounded-2xl bg-slate-900 p-5 text-white shadow-md ring-2 ring-[#443C68]"
       >
         <h1 class="text-xl font-medium">Github Profile Fetcher</h1>
         <div class="flex w-full items-center justify-center gap-2">
@@ -30,11 +28,11 @@
             type="text"
             id="username"
             placeholder="Enter github username"
-            class="w-full rounded-lg border px-3 py-2 text-base text-black focus:border-[#443C68] focus:outline-none focus:ring-1 focus:ring-[#443C68]"
+            class="w-full rounded-lg border px-3 py-2 text-sm text-black focus:border-[#443C68] focus:outline-none focus:ring-1 focus:ring-[#443C68]"
           />
           <button
             id="fetch-btn"
-            class="block rounded-lg bg-slate-900 px-3 py-2"
+            class="block rounded-lg bg-slate-500 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#443C68]"
           >
             <i class="fa-solid fa-magnifying-glass text-white"></i>
           </button>
@@ -43,28 +41,35 @@
       <!-- Profile -->
       <div
         id="profile"
-        class="bg-glass w-full rounded-[33px] border-[0.5px] border-white p-3 backdrop-blur-[27.5px]"
+        class="my-5 hidden w-full rounded-[33px] border-[0.5px] border-white bg-glass p-3 shadow-md backdrop-blur-[27.5px]"
       >
         <div
-          class="flex h-80 w-full items-end rounded-[20px] bg-center bg-no-repeat"
-          style="background-image: url(./test.jpeg)"
+          id="profile-img"
+          class="flex h-80 w-full items-end rounded-[20px] bg-cover bg-center bg-no-repeat"
         >
           <div
-            class="bg-glassGray flex w-full items-center justify-between overflow-hidden rounded-[20px] stroke-white stroke-[0.7px] px-7 py-5 text-white backdrop-blur-[39px]"
+            class="flex w-full items-center justify-between overflow-hidden rounded-[20px] bg-glassGray stroke-white stroke-[0.7px] px-7 py-5 text-white backdrop-blur-[39px]"
           >
-            <div>
-              <h2 class="text-2xl font-bold">danzBraham</h2>
-              <h3 class="text-base">Zidan Abraham</h3>
+            <div id="profile-info">
+              <h2 class="text-2xl font-bold"></h2>
+              <h3 class="text-base"></h3>
             </div>
             <a
-              href="https://github.com/danzBraham"
+              id="profile-link"
               class="transition duration-150 ease-in-out hover:-translate-y-1"
+              target="_blank"
             >
               <i class="fa-brands fa-github fa-2xl"></i>
             </a>
           </div>
         </div>
       </div>
+      <h1
+        id="not-found"
+        class="my-5 hidden w-full rounded-[33px] border-[0.5px] border-white bg-glass p-3 text-center font-medium text-white shadow-md backdrop-blur-[27.5px]"
+      >
+        User not found
+      </h1>
     </main>
   </body>
 </html>

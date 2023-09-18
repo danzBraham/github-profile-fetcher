@@ -5,3 +5,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hide {
+  @apply hidden;
+}
+
+.show {
+  @apply block;
+}
