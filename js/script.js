@@ -13,6 +13,7 @@ fetchBtn.addEventListener("click", async () => {
     const { data } = await axios.get(
       `https://api.github.com/users/${username}`,
     );
+    console.log(data);
     profileContainer.innerHTML = `
       <h2>${data.login}</h2>
       <img src="${data.avatar_url}" alt="${data.login}'s avatar">
