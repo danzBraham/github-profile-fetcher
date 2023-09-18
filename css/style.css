@@ -538,8 +538,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.invisible{
-  visibility: hidden;
+.m-auto{
+  margin: auto;
 }
 
 .my-5{
@@ -640,11 +640,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#635985\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 89 133 / var(--tw-bg-opacity));
-}
-
 .bg-glass{
   background-color: rgba(255, 237, 237, 0.01);
 }
@@ -653,24 +648,14 @@ video {
   background-color: rgba(255, 252, 237, 0.37);
 }
 
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-slate-500{
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br{
@@ -693,6 +678,10 @@ video {
 
 .bg-center{
   background-position: center;
+}
+
+.bg-top{
+  background-position: top;
 }
 
 .bg-no-repeat{
@@ -733,6 +722,11 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-\[7px\]{
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .text-center{
@@ -781,10 +775,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-0{
-  opacity: 0;
-}
-
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -826,10 +816,6 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -866,4 +852,44 @@ video {
 .focus\:ring-\[\#443C68\]:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(68 60 104 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 768px){
+  .tablet\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .tablet\:px-60{
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .tablet\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .laptop\:h-96{
+    height: 24rem;
+  }
+
+  .laptop\:h-full{
+    height: 100%;
+  }
+
+  .laptop\:h-\[420px\]{
+    height: 420px;
+  }
+
+  .laptop\:bg-top{
+    background-position: top;
+  }
+
+  .laptop\:px-52{
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
 }
